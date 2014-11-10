@@ -9,7 +9,7 @@ syntax on
 filetype plugin indent on
 
 " Colorscheme see https://github.com/hukl/Smyck-Color-Scheme
-color smyck
+" color smyck
 
 " Add line numbers
 set number
@@ -80,10 +80,10 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 set backspace=indent,eol,start
 
 " ctrp custom ignores
-let g:ctrlp_custom_ignore = {
+"let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.eunit$',
   \ 'file': '\.exe$\|\.so$\|\.dll\|\.beam$\|\.DS_Store$'
   \ }
 
-let g:erlangCheckFile = "~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
-let g:erlangHighlightErrors = 1
+"let g:erlangCheckFile = "~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
+"let g:erlangHighlightErrors = 1
