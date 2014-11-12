@@ -10,6 +10,7 @@ filetype plugin indent on
 
 " Colorscheme see https://github.com/hukl/Smyck-Color-Scheme
 " color smyck
+set background=dark
 
 " Add line numbers
 set number
@@ -48,14 +49,10 @@ set hlsearch
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " Highlight characters behind the 80 chars margin
-:au BufWinEnter * let w:m2=matchadd('ColumnMargin', '\%>80v.\+', -1)
+":au BufWinEnter * let w:m2=matchadd('ColumnMargin', '\%>80v.\+', -1)
 
 " Disable code folding
 set nofoldenable
-
-" Directories for swp files
-set backupdir=~/.vimbackup
-set directory=~/.vimbackup
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
@@ -78,12 +75,3 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-" ctrp custom ignores
-"let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.eunit$',
-  \ 'file': '\.exe$\|\.so$\|\.dll\|\.beam$\|\.DS_Store$'
-  \ }
-
-"let g:erlangCheckFile = "~/.vim/bundle/vimerl/compiler/erlang_check_file.erl"
-"let g:erlangHighlightErrors = 1
